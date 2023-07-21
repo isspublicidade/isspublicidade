@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-11-css" href="./wp-content/uploads/elementor/css/post-11.css?ver=1689975317" media="all">
+<link rel="stylesheet" id="elementor-post-11-css" href="./wp-content/uploads/elementor/css/post-11.css?ver=1689980659" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -69,7 +69,141 @@ img.emoji {
 <link rel="icon" href="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 <meta name="msapplication-TileImage" content="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
-		<style id="wp-custom-css">/* DESKTOP */
+		<style id="wp-custom-css">/* ACCORDION */
+#faq {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+#faq ul {
+  text-align: left;
+}
+
+#faq .transition, #faq p, #faq ul li i:before, #faq ul li i:after {
+  transition: all 0.3s;
+}
+
+#faq .no-select, #faq h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#faq h2 {
+  color: #000;
+  font-family: "Marcellus SC", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: left;
+  padding: 30px 60px 0 15px;
+  text-transform: none;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#faq p {
+  color: rgb(83, 83, 83);
+  text-align: left;
+  color: rgb(83, 83, 83);
+  font-family: Marcellus, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  contain: layout;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+  padding: 10px 20px 0 20px;
+  transition: .3s opacity, .6s max-height;
+  hyphens: auto;
+  z-index: 2;
+}
+
+#faq ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#faq ul li + li {
+  margin-top: 15px;
+}
+
+#faq ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+#faq ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 35px;
+  right: 15px;
+}
+
+#faq ul li i:before, #faq ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 3px;
+  height: 9px;
+}
+
+#faq ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+#faq ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+
+#faq ul li input[type=checkbox]:checked ~ h2 {
+  color: #000;
+}
+
+#faq ul li input[type=checkbox]:checked ~ p {
+  max-height: 0;
+  transition: .3s;
+  opacity: 0;
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/* DESKTOP */
 .dropdownmenu {
 	margin-top: -100vh;
 	transition: margin-top 0.3s ease-in-out;
@@ -848,7 +982,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				</div>
 				<div class="elementor-element elementor-element-f08e7e5 elementor-widget elementor-widget-text-editor" data-id="f08e7e5" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>Curso com profissional de alta qualidade! Minha professora é super fantástica! Recomendo! Custo benefício muito bom! 💕</p>						</div>
+							<p>Curso com profissional de alta qualidade! Minha professora é super fantástica! Recomendo! Custo benefício muito bom!</p>						</div>
 				</div>
 					</div>
 				</div>
@@ -1098,8 +1232,128 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="elementor-element elementor-element-0257ac2 e-flex e-con-boxed e-con" data-id="0257ac2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-4c945ad e-con-full e-flex e-con" data-id="4c945ad" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-4a4f4e8 elementor-widget elementor-widget-html" data-id="4a4f4e8" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Sou totalmente iniciante, posso fazer os cursos?</h2>
+      <p>Com certeza! Nossos cursos são personalizados e planejados sob medida para cada aluno, independente do nível de conhecimento prévio.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
 				</div>
-		<div class="elementor-element elementor-element-f2a8312 e-con-full e-flex e-con" data-id="f2a8312" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-8506e1f elementor-widget elementor-widget-html" data-id="8506e1f" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Qual o tempo de duração do curso?</h2>
+      <p>O tempo de duração do curso é muito variável. Depende do conhecimento prévio, das facilidades e dificuldades do aluno, dos objetivos, e do empenho e regularidade nos estudos. As aulas são personalizadas e o avanço acompanha o rendimento do aluno.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-6e2a483 elementor-widget elementor-widget-html" data-id="6e2a483" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>A qualidade do curso à distância é equivalente ao curso presencial?</h2>
+      <p>Sim. A única diferença entre os dois é o meio pelo qual é feita a comunicação. Os professores, a duração da aula e o método de trabalho são os mesmos.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-cf73cf1 elementor-widget elementor-widget-html" data-id="cf73cf1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Tenho que dar aceite em um contrato?</h2>
+      <p>Sim. Nosso contrato tem duração de 1 ano, sendo renovado automaticamente caso seja da vontade do aluno dar continuidade aos estudos. Caso o aluno desista do curso, informando o desejo de rescisão nos primeiros 30 dias após o aceite do contrato, não há multa. Após esse prazo a multa é de 50% do valor da mensalidade.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c8d6f64 e-con-full e-flex e-con" data-id="c8d6f64" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-6d066e0 elementor-widget elementor-widget-html" data-id="6d066e0" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Posso testar antes de me matricular?</h2>
+      <p>Oferecemos uma entrevista online e gratuita para que você possa testar a sua conexão, conversar com o professor, tirar dúvidas e conhecer melhor o funcionamento do curso.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-077b214 elementor-widget elementor-widget-html" data-id="077b214" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Como funcionam os cursos à distância?</h2>
+      <p>As aulas são 100% online e AO VIVO. Não são gravações. Acontecem uma vez por semana através do Skype, Hangouts, FaceTime ou similar. É necessário ter conexão com a internet de no mínimo 5 megas de velocidade, um celular, tablet ou computador com câmera e microfone e um suporte, no caso de celular ou tablet. O aluno precisa estar em local silencioso, tranquilo e bem iluminado, onde não haja transito de outras pessoas durante a aula. Para as aulas de instrumento é preciso um local um pouco mais espaçoso para que a câmera possa enquadrar o aluno por inteiro.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-217c2e9 elementor-widget elementor-widget-html" data-id="217c2e9" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Os cursos são reconhecidos pelo MEC?</h2>
+      <p>Não, o CMBB é uma escola de Cursos Livres. Oferecemos certificado com discriminação dos conteúdos abordados durante o tempo de permanência do aluno em nosso curso.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-3d16103 elementor-widget elementor-widget-html" data-id="3d16103" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Qual o valor da mensalidade? Quais são as formas de pagamento?</h2>
+      <p>Temos mensalidades à partir de 160,00. Os valores variam de acordo com o curso escolhido. Entre em contato para verificar a mensalidade do curso de seu interesse. O pagamento é feito através de boleto bancário.</p>
+    </li>
+  </ul>
+</div>
+
+		</div>
+				</div>
 				</div>
 					</div>
 				</div>
