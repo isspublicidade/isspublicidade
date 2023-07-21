@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./../wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689970364" media="all">
+<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689973154" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -74,7 +74,11 @@ img.emoji {
 	margin-top: -100vh;
 	transition: margin-top 0.3s ease-in-out;
 }
-
+/*
+.btnopen:hover {
+	pointer-events: none;
+}
+*/
 .fotosprofessores .widget-image-caption {
 	margin-top: -70px !important;
   margin-left: 20px !important;
@@ -391,7 +395,12 @@ img.emoji {
 			btnOpen.classList.remove('active');
 			dropdownMenu.classList.remove('active');
 		}
-		
+
+		// Função para remover o foco do botão btnOpen
+		function removeBtnOpenFocus() {
+			btnOpen.blur();
+		}
+
 		btnOpen.addEventListener('click', function() {
 			const isOpen = dropdownMenu.classList.contains('active');
 			if (isOpen) {
@@ -407,7 +416,7 @@ img.emoji {
 		btnClose.addEventListener('click', function() {
 			closeMenu();
 		});
-		
+
 		// Listen to clicks on all links inside the menu
 		menuLinks.forEach(link => {
 			link.addEventListener('click', function() {
@@ -422,17 +431,17 @@ img.emoji {
 			});
 		});
 
-		// Inativar o botão btnOpen quando a transição do menu for concluída (menu aberto)
-		btnOpen.addEventListener('transitionend', function(event) {
-			if (event.propertyName === 'margin-top' && dropdownMenu.classList.contains('active')) {
-				btnOpen.classList.remove('active');
-			}
-		});
-
 		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
 		addEventListener('scroll', function() {
 			if (pageYOffset >= scrollEndPosition) {
 				closeMenu();
+			}
+		});
+
+		// Remover o foco do botão btnOpen ao clicar fora dele
+		document.addEventListener('click', function(event) {
+			if (!btnOpen.contains(event.target)) {
+				removeBtnOpenFocus();
 			}
 		});
     });</script>
@@ -508,9 +517,13 @@ img.emoji {
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-d5337f3 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="d5337f3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-f3a6b9b btnopen elementor-widget elementor-widget-image" data-id="f3a6b9b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-31c604c btnopen elementor-view-default elementor-widget elementor-widget-icon" data-id="31c604c" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="104" height="104" src="./../wp-content/uploads/2023/07/effect_Musicalcenter.png" class="attachment-large size-large wp-image-327" alt="" loading="lazy">															</div>
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-bars"></i>			</div>
+		</div>
+				</div>
 				</div>
 				</div>
 					</div>
