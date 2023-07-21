@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Centro Musical Bernardo Bessler</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../</link>
+	<atom:link href="httpsisspublicidade.github.io/musicalcenter//feed/" rel="self" type="application/rss+xml" />
+	<link>httpsisspublicidade.github.io/musicalcenter/</link>
 	<description>Escola de Música em Niterói</description>
 	<lastBuildDate>Fri, 21 Jul 2023 13:11:37 +0000</lastBuildDate>
 	<language>pt-BR</language>
@@ -21,9 +21,9 @@
 	<generator>https://wordpress.org/?v=6.2.2</generator>
 
 <image>
-	<url>./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg</url>
+	<url>httpsisspublicidade.github.io/musicalcenter//wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg</url>
 	<title>Centro Musical Bernardo Bessler</title>
-	<link>./../</link>
+	<link>httpsisspublicidade.github.io/musicalcenter/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
