@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./../wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689973154" media="all">
+<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689974137" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -79,6 +79,13 @@ img.emoji {
 	pointer-events: none;
 }
 */
+
+.play-icon-mc .eicon-play {
+	color: #fff !important;
+	text-shadow: 1px 0 6px rgba(0,0,0,.3) !important;
+	font-size: 100px !important;
+}
+
 .fotosprofessores .widget-image-caption {
 	margin-top: -70px !important;
   margin-left: 20px !important;
@@ -394,13 +401,9 @@ img.emoji {
 			dropdownMenu.style.marginTop = '-100vh';
 			btnOpen.classList.remove('active');
 			dropdownMenu.classList.remove('active');
+			btnOpen.blur(); // Remover foco do botão btnOpen ao fechar o menu
 		}
-
-		// Função para remover o foco do botão btnOpen
-		function removeBtnOpenFocus() {
-			btnOpen.blur();
-		}
-
+		
 		btnOpen.addEventListener('click', function() {
 			const isOpen = dropdownMenu.classList.contains('active');
 			if (isOpen) {
@@ -410,13 +413,14 @@ img.emoji {
 				scrollTo({ top: 0, behavior: 'smooth' });
 				btnOpen.classList.add('active');
 				dropdownMenu.classList.add('active');
+				btnOpen.blur(); // Remover foco do botão btnOpen ao abrir o menu
 			}
 		});
 		
 		btnClose.addEventListener('click', function() {
 			closeMenu();
 		});
-
+		
 		// Listen to clicks on all links inside the menu
 		menuLinks.forEach(link => {
 			link.addEventListener('click', function() {
@@ -432,16 +436,9 @@ img.emoji {
 		});
 
 		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
-		addEventListener('scroll', function() {
-			if (pageYOffset >= scrollEndPosition) {
+		addEventListener('scroll', function() { // Aqui também removemos 'window.'
+			if (pageYOffset >= scrollEndPosition) { // Aqui também removemos 'window.'
 				closeMenu();
-			}
-		});
-
-		// Remover o foco do botão btnOpen ao clicar fora dele
-		document.addEventListener('click', function(event) {
-			if (!btnOpen.contains(event.target)) {
-				removeBtnOpenFocus();
 			}
 		});
     });</script>
