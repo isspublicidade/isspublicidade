@@ -41,7 +41,7 @@ img.emoji {
 <link rel="stylesheet" id="font-awesome-5-all-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.16.3" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.16.3" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./../wp-content/uploads/elementor/css/global.css?ver=1695057540" media="all">
-<link rel="stylesheet" id="elementor-post-1172-css" href="./../wp-content/uploads/elementor/css/post-1172.css?ver=1695126420" media="all">
+<link rel="stylesheet" id="elementor-post-1172-css" href="./../wp-content/uploads/elementor/css/post-1172.css?ver=1695128688" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.3.1" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-regular-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3" media="all">
@@ -90,6 +90,30 @@ li {
 
 .title_tachado {
 	text-decoration: line-through;
+}
+
+.pulse {
+	animation: pulse 0.7s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 0px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+	0% {
+	-webkit-transform: scale(1);
+}
+100% {
+	-webkit-transform: scale(1.1);
+}
+} @keyframes pulse {
+	0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(1.1);
 }</style>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 </head>
@@ -108,19 +132,17 @@ li {
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-9aba608 e-con-full e-flex e-con e-child" data-id="9aba608" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;container_type&quot;:&quot;flex&quot;}">
-				<div class="elementor-element elementor-element-5ff99ec elementor-align-left elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5ff99ec" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-5ff99ec elementor-align-right elementor-mobile-align-right elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5ff99ec" data-element_type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 			<link rel="stylesheet" href="./../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="far fa-clock"></i>						</span>
-										<span class="elementor-icon-list-text">As ofertas presentes nessa página são por tempo limitado</span>
+										<span class="elementor-icon-list-text">Oferta por tempo limitado!</span>
 									</li>
 						</ul>
 				</div>
 				</div>
-				</div>
-		<div class="elementor-element elementor-element-65d8d8b e-con-full e-flex e-con e-child" data-id="65d8d8b" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;container_type&quot;:&quot;flex&quot;}">
 				</div>
 					</div>
 				</div>
@@ -141,7 +163,7 @@ li {
 				<div class="elementor-widget-container">
 															<img decoding="async" width="556" height="494" src="./../wp-content/uploads/2023/09/3-mockup-1.png" class="attachment-large size-large wp-image-1253" alt="">															</div>
 				</div>
-				<div class="elementor-element elementor-element-42ef235 elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="42ef235" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-42ef235 elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="42ef235" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="#kits">
@@ -186,7 +208,7 @@ li {
 				<div class="elementor-widget-container">
 															<img decoding="async" width="556" height="494" src="./../wp-content/uploads/2023/09/3-mockup-1.png" class="attachment-large size-large wp-image-1253" alt="">															</div>
 				</div>
-				<div class="elementor-element elementor-element-8c5f41f elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="8c5f41f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-8c5f41f elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="8c5f41f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="#kits">
@@ -317,7 +339,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">R$369,90 à vista</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-6b0dc68 elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="6b0dc68" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-6b0dc68 elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="6b0dc68" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://app.monetizze.com.br/r/BRG1718128">
@@ -388,7 +410,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Ou R$ 189,90 à vista</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-1930581 elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="1930581" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-1930581 elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="1930581" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://app.monetizze.com.br/r/BNE1718126">
@@ -444,7 +466,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">R$129,90 à vista</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-1c5b998 elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="1c5b998" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-1c5b998 elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="1c5b998" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://app.monetizze.com.br/r/BBB1718125">
@@ -552,7 +574,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-6f8d844 elementor-align-center btn_pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="6f8d844" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-6f8d844 elementor-align-center pulse elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="6f8d844" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="#kits">
