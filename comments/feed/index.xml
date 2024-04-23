@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentários sobre Brasil Magia	</title>
-	<atom:link href="https://isspublicidade.online/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://isspublicidade.online/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Explorando magia, conectando com o universo</description>
 	<lastBuildDate>Tue, 23 Apr 2024 11:09:58 +0000</lastBuildDate>
 	<sy:updatePeriod>
