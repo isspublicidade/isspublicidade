@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Brasil Magia</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="https://isspublicidade.online/feed/" rel="self" type="application/rss+xml" />
+	<link>https://isspublicidade.online/</link>
 	<description>Explorando magia, conectando com o universo</description>
-	<lastBuildDate>Tue, 23 Apr 2024 11:09:58 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 23 Apr 2024 13:43:40 +0000</lastBuildDate>
 	<language>pt-BR</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,9 +21,9 @@
 	<generator>https://wordpress.org/?v=6.5.2</generator>
 
 <image>
-	<url>./../wp-content/uploads/2024/04/cropped-favicon-32x32.png</url>
+	<url>https://isspublicidade.online/wp-content/uploads/2024/04/cropped-favicon-32x32.png</url>
 	<title>Brasil Magia</title>
-	<link>./../index.html</link>
+	<link>https://isspublicidade.online/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
